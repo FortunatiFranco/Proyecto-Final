@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+h1{
+    text-align: center;
+    text-decoration-line: underline;
+    font-size: 70px;
+    color: green;
+    margin-top: 0px;
+}
+
+.paginas{
+    display: flex;
+    justify-content: center;
+}
+
+.paginas li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 6px;
+    border: 1px solid green;
+}
+
+.paginas a{
+    text-decoration: none;
+    font-size: 20px;
+    color: green;
+    
+}
+
+
+h2 {
+    text-align: center;
+    color: green;
+    margin: 10px;
+}
+
+.medio {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas:
+    "mujer hombre niño"
+    "mujer hombre niño";
+}
+
+.mujer{
+    grid-area: mujer;
+}
+
+.hombre{
+    grid-area: hombre;
+}
+
+.niño{
+    grid-area: niño;
+}
+
+.medio img{
+    border: 3px solid green;
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.medio button{
+    margin-top: 8px;
+    border: solid 2px green;
+    border-radius: 100px;
+}
+
+.medio a{
+    text-decoration: none;
+    padding: 2px;
+    color: green;
+}
+
+.stock ul{
+    display: grid;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "nike nike-1 puma"
+    "nike-2 adidas adidas-1";
+}
+
+.stock li{
+    list-style-type: none;
+}
+
+.stock img{
+    border: 2px solid green;
+    width: 200px;
+    height: 200px;
+}
+
+.nike{
+    grid-area: nike;
+}
+
+.nike-1{
+    grid-area: nike-1;
+}
+
+.puma{
+    grid-area: puma;
+}
+
+.adidas{
+    grid-area: adidas;
+}
+
+.nike-2{
+    grid-area: nike-2;
+}
+
+.adidas-1{
+    grid-area: adidas-1;
+}
+
+.publicidad {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.derechos-res{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+:disabled{
+    background-color: rgba(231, 101, 101, 0.753);
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 8px;
+}
+
+.redes-sociales img{
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+
+.nosotros-text{
+    margin: 5px;
+    border: 4px solid yellow;
+    padding: 3px;
+    background-color: beige;
+    color: black;
+}
+
+.galeria{
+    width: 100%;
+    overflow: auto;
+}
+
+.galeria li{
+    list-style-type: none;
+    width: 33%;
+    float: left;
+}
+
+.galeria img{
+    margin: 25px;
+    width: 400px;
+}
+
+.gps1{
+    text-align: center;
+    margin: 5px;
+}
+.gps{
+    width: 500px;
+}
+
+.lista-con{
+    text-align: center;
+    font-size: 20px;
+    border: 3px solid orange;
+    background-color: beige;
+}
+
+h3{
+    text-align: center;
+}
+
+
+.hashtag{
+    margin: 4px;
+    font-size: 30px;
+    color: green;
+}
+
+.publi-home{
+    width: 100vw;
+    height: 30vh;
+    text-align: center;
+    margin-top: 300px;
+}
+
+@media (max-width:425px) {
+body{
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.paginas li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+}
+
+.logo{
+    text-align: center;
+    margin: 3px;
+}
+
+h1{
+    display: none;
+}
+
+.medio{
+    display: flex;
+    flex-direction: column;
+}
+
+.medio img{
+    width: 90%;
+    height: auto;
+    margin: 4px;
+}
+
+iframe{
+    display: none;
+}
+
+.stock ul{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+}
