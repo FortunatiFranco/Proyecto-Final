@@ -140,6 +140,19 @@ h2 {
     height: 200px;
 }
 
+.stock button{
+    margin-top: 4px;
+}
+
+.stock a{
+    text-decoration: none;
+}
+
+.stock a:focus{
+    color: green;
+    background-color: violet;
+}
+
 .nike{
     grid-area: nike;
 }
@@ -239,9 +252,14 @@ option:disabled{
 
 .lista-con{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     border: 3px solid orange;
     background-color: beige;
+}
+
+.lista-con li{
+    list-style-type: none;
 }
 
 h3{
@@ -250,6 +268,7 @@ h3{
 
 
 .hashtag{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 4px;
     font-size: 30px;
     color: green;
@@ -301,10 +320,20 @@ iframe{
     display: none;
 }
 
+.gps{
+    display: inherit;
+    width: 100%;
+    height: auto;
+}
+
 .stock ul{
     display: flex;
     flex-direction: column;
     padding: 5px;
+}
+
+.stock li{
+    margin: 10px;
 }
 
 .galeria ul{
@@ -312,10 +341,19 @@ iframe{
     flex-direction: column;
 }
 
+
 .galeria img{
     width: 85%;
     height: auto;
     margin: 4px;
 }
 
+h3{
+    margin-top: 6px;
+}
+
+.lista-con{
+    width: 100%;
+    height: auto;
+}
 }

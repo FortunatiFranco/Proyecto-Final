@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>De La Calle - Contactanos</title>
     <link rel="icon" href="../multimedia/dlc logo.png">
@@ -10,52 +11,98 @@
 <body>
     <header>
         <a href="../index.html"><img class="logo" src="../multimedia/dlc logo.png" alt="logo"></a>
-        <h1>Contáctanos</h1>
-        <section class="paginas">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./tienda.html">Tienda</a></li>
-                <li><a href="./sale.html">Sale</a></li>
-                <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
-            </ul>
-        </section>
+        <h1>Contactanos</h1>
+        <nav class="paginas">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./tienda.html">Tienda</a></li>
+            <li><a href="./sale.html">Sale</a></li>
+            <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
+          </ul>
+        </nav>
     </header>
 <main>
-    <h2>ACERCATE A NUESTRA SUCURSAL</h2>
-    <nav class="gps1">
-        <iframe class="gps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13138.493684531719!2d-58.427886444580075!3d-34.58839400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca83b2d657a1%3A0x842bcbef147891ee!2sNike!5e0!3m2!1ses!2sar!4v1745018123523!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"target="_blank"></iframe>
-    </nav>
-    <article class="lista-con">
-        <ol>lISTA DE CONTACTOS:
-            <li>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSBptDxtpMNVqWVxJPvWlRGdVtknlWQZKqMwxBlkdhWFnhsnvgwfKKZFmXpThtFtXPGZkkMM">soporte@delacalle.com</a></li>
-            <li>Telefono: <a href="tel:+1123456789">1123456789</a></li>
-        </ol>
-    </article>
-    <h3>DEJANOS TUS DATOS EN EL SIGUIENTE FORMULARIO PARA CONTACTARTE</h3>
-    <form action="/submit" method="post">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" name="nombre" id="nombre"> Obligatorio.<br>
-        <label for="apellido">Apellido:</label><br>
-        <input type="text" name="apellido" id="apellido"> Opcional.<br>
-        <label for="contacto-usuario">Medio deseado para contactarnos (puede ser mas de uno):</label><br>
-        <input type="text" name="" id=""><br>
-        <input type="text" name="" id=""> Obligatorio<br>
-        <label for="opinion">Nota (opinion o descargo)</label><br>
-        <textarea name="opinion-descargo" id=""></textarea> Opcional.<br>
-        <button>ENVIAR</button>
-    </form>
+  <h2>ACERCATE A NUESTRA SUCURSAL</h2>
+  <nav class="gps1">
+    <iframe class="gps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13138.493684531719!2d-58.427886444580075!3d-34.58839400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca83b2d657a1%3A0x842bcbef147891ee!2sNike!5e0!3m2!1ses!2sar!4v1745018123523!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"target="_blank"></iframe>
+  </nav>
+  <article class="lista-con">
+    <ol>LISTA DE CONTACTOS
+      <li>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSBptDxtpMNVqWVxJPvWlRGdVtknlWQZKqMwxBlkdhWFnhsnvgwfKKZFmXpThtFtXPGZkkMM">soporte@delacalle.com</a></li>
+      <li>Telefono: <a href="tel:+1123456789">1123456789</a></li>
+    </ol>
+  </article>
+  <h3>REGISTRATE EN EL SIGUIENTE FORMULARIO PARA MAS INFORMACIÓN</h3>
+  <form class="row g-3 m-2">
+    <div class="col-xl-4">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control border-success" id="inputEmail4">
+    </div>
+    <div class="col-xl-4">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control border-success" id="inputPassword4">
+    </div>
+    <div class="col-xl-4">
+      <label for="inputAddress" class="form-label">Dirección</label>
+      <input type="text" class="form-control border-success" id="inputAddress" placeholder="Calle falsa 123">
+    </div>
+    <div class="col-xl-3">
+      <label for="inputCity" class="form-label">Ciudad</label>
+      <input type="text" class="form-control border-success" id="inputCity">
+    </div>
+    <div class="col-xl-2">
+      <label for="inputState" class="form-label">Provincia</label>
+      <select id="inputState" class="form-select border-success">
+        <option selected>Buenos Aires</option>
+        <option value="">Catamarca</option>
+        <option value="">Chaco</option>
+        <option value="">CABA</option>
+        <option value="">Córdoba</option>
+        <option value="">Corrientes</option>
+        <option value="">Entre Ríos</option>
+        <option value="">Formosa</option>
+        <option value="">Jujuy</option>
+        <option value="">La Pampa</option>
+        <option value="">La Rioja</option>
+        <option value="">Mendoza</option>
+        <option value="">Misiones</option>
+        <option value="">Neuquén</option>
+        <option value="">Río Negro</option>
+        <option value="">Salta</option>
+        <option value="">San Juan</option>
+        <option value="">San luis</option>
+        <option value="">Santa Cruz</option>
+        <option value="">Santa Fe</option>
+        <option value="">Santiago Del Estero</option>
+        <option value="">Tierra Del Fuego</option>
+        <option value="">Tucumán</option>
+      </select>
+    </div>
+    <div class="col-xl-1">
+      <label for="inputZip" class="form-label">Codigo postal</label>
+      <input type="text" class="form-control border-success" id="inputZip">
+    </div>
+    <div class="col-xl-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">Mantener Sesión</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+  </form>
 </main>
 <footer>
-    <div class="redes-sociales">
-        <div>
-            <ul>
-                <li><a href="https://www.facebook.com/nike" target="_blank"><img src="../multimedia/facebook.png" alt="">Delacalle_ok</a></li>
-                <li><a href="https://www.instagram.com/nike/" target="_blank"><img src="../multimedia/ig.png" alt="">Delacalle_ok</a></li>
-                <li><a href="https://x.com/Nike" target="_blank"><img src="../multimedia/X - twitter.png" alt="">Delacalle_ok</li></a>
-            </ul>
-        </div>
-    </div>
-    <p class="derechos-res">DERECHOS RESERVADOS</p>
+  <div class="redes-sociales">
+    <ul>
+      <li><a href="https://www.facebook.com/nike" target="_blank"><img src="../multimedia/facebook.png" alt=""></a></li>
+      <li><a href="https://www.instagram.com/nike/" target="_blank"><img src="../multimedia/ig.png" alt=""></a></li>
+      <li><a href="https://x.com/Nike" target="_blank"><img src="../multimedia/X - twitter.png" alt=""></li></a>
+    </ul>
+  </div>
+  <p class="derechos-res">DERECHOS RESERVADOS</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
