@@ -8,13 +8,24 @@
     font-family: "fuente-pr";
     src: url(../fonts/Creepster-Regular.ttf);
 }
+
 @font-face {
     font-family: "fuente-seg";
     src: url(../fonts/Anton-Regular.ttf);
 }
+
 @font-face {
     font-family: "fuente-p";
     src: url(../fonts/PermanentMarker-Regular.ttf);
 }
 
-/*# sourceMappingURL=styles.css.map */
+@mixin mobile{
+    @media (max-width: 425px){
+        @content
+    }
+};
+
+@mixin flex ($display,$justify-content){
+    display: $display;
+    justify-content: $justify-content;
+}
