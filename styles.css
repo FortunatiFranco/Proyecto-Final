@@ -17,9 +17,13 @@
   font-family: "fuente-p";
   src: url(../fonts/PermanentMarker-Regular.ttf);
 }
-.flex-mobile {
-  display: flex;
-  flex-direction: column;
+@media (max-width: 425px) {
+  body {
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
 .grid, .stock ul, .medio {
@@ -39,6 +43,12 @@
   height: 100px;
   margin-left: 20px;
 }
+@media (max-width: 425px) {
+  .logo {
+    text-align: center;
+    margin: 3px;
+  }
+}
 
 h1 {
   text-align: center;
@@ -47,6 +57,11 @@ h1 {
   font-size: 70px;
   color: green;
   margin-top: 0px;
+}
+@media (max-width: 425px) {
+  h1 {
+    display: none;
+  }
 }
 
 .paginas {
@@ -58,6 +73,14 @@ h1 {
   list-style-type: none;
   margin: 6px;
   border: 1px solid green;
+}
+@media (max-width: 425px) {
+  .paginas li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+  }
 }
 .paginas a {
   text-decoration: none;
@@ -80,11 +103,24 @@ h2 {
   grid-template-rows: repeat(1, 300px);
   grid-template-areas: "mujer hombre niño" "mujer hombre niño";
 }
+@media (max-width: 425px) {
+  .medio {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .medio img {
   border: 3px solid green;
   width: 270px;
   height: 300px;
   object-fit: cover;
+}
+@media (max-width: 425px) {
+  .medio img {
+    width: 90%;
+    height: auto;
+    margin: 4px;
+  }
 }
 .medio button {
   margin-top: 8px;
@@ -117,6 +153,12 @@ h2 {
   margin-top: 50px;
 }
 
+@media (max-width: 425px) {
+  iframe {
+    display: none;
+  }
+}
+
 .derechos-res {
   margin-left: 20px;
   margin-bottom: 20px;
@@ -139,8 +181,20 @@ h2 {
   grid-template-rows: repeat(2, 300px);
   grid-template-areas: "nike nike-1 puma" "nike-2 adidas adidas-1";
 }
+@media (max-width: 425px) {
+  .stock ul {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+}
 .stock ul li {
   list-style-type: none;
+}
+@media (max-width: 425px) {
+  .stock ul li {
+    margin: 10px;
+  }
 }
 .stock ul img {
   border: 2px solid green;
@@ -210,6 +264,12 @@ option:disabled {
 .galeria ul {
   width: 100%;
 }
+@media (max-width: 425px) {
+  .galeria ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .galeria ul li {
   list-style-type: none;
   margin: 10px;
@@ -221,6 +281,13 @@ option:disabled {
   border-radius: 70px;
   object-fit: cover;
 }
+@media (max-width: 425px) {
+  .galeria ul img {
+    width: 85%;
+    height: auto;
+    margin: 4px;
+  }
+}
 
 .gps1 {
   text-align: center;
@@ -230,6 +297,13 @@ option:disabled {
 .gps {
   width: 500px;
 }
+@media (max-width: 425px) {
+  .gps {
+    display: inherit;
+    width: 100%;
+    height: auto;
+  }
+}
 
 .lista-con {
   text-align: center;
@@ -238,12 +312,23 @@ option:disabled {
   border: 3px solid orange;
   background-color: beige;
 }
+@media (max-width: 425px) {
+  .lista-con {
+    width: 100%;
+    height: auto;
+  }
+}
 .lista-con li {
   list-style-type: none;
 }
 
 h3 {
   text-align: center;
+}
+@media (max-width: 425px) {
+  h3 {
+    margin-top: 6px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

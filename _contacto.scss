@@ -5,6 +5,11 @@
 
 .gps{
     width: 500px;
+    @include mobile{
+        display: inherit;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .lista-con{
@@ -13,6 +18,10 @@
     font-size: 20px;
     border: 3px solid orange;
     background-color: beige;
+    @include mobile{
+        width: 100%;
+        height: auto;
+    }
     li{
         list-style-type: none;
     }
@@ -20,4 +29,7 @@
 
 h3{
     text-align: center;
+    @include mobile{
+        margin-top: 6px;
+    }
 }

@@ -12,12 +12,22 @@ h2{
     grid-template-areas:
     "mujer hombre niño"
     "mujer hombre niño";
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+    }
     img{
         border: 3px solid green;
         width: 270px;
         height: 300px;
         object-fit: cover;
+        @include mobile{
+            width: 90%;
+            height: auto;
+            margin: 4px;
+        }
     }
+
     button{
         margin-top: 8px;
         border: solid 2px green;
@@ -48,4 +58,10 @@ h2{
 .publicidad{
     text-align: center;
     margin-top: 50px;
+}
+
+iframe{
+    @include mobile{
+        display: none;
+    }
 }

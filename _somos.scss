@@ -11,6 +11,10 @@
 .galeria ul{
     @extend .flex;
     width: 100%;
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+    }
     li{
         list-style-type: none;
         margin: 10px;
@@ -21,5 +25,10 @@
         border: 3px solid green;
         border-radius: 70px;
         object-fit: cover;
+        @include mobile{
+            width: 85%;
+            height: auto;
+            margin: 4px;
+        }
     }
 }
