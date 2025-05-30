@@ -28,7 +28,7 @@
   text-align: center;
 }
 
-.flex, .redes-sociales {
+.flex, .galeria ul, .redes-sociales {
   display: flex;
   justify-content: center;
 }
@@ -156,6 +156,94 @@ h2 {
 .stock ul a:focus {
   color: green;
   background-color: violet;
+}
+
+.nike {
+  grid-area: nike;
+}
+
+.nike-1 {
+  grid-area: nike-1;
+}
+
+.puma {
+  grid-area: puma;
+}
+
+.adidas {
+  grid-area: adidas;
+}
+
+.nike-2 {
+  grid-area: nike-2;
+}
+
+.adidas-1 {
+  grid-area: adidas-1;
+}
+
+select:focus {
+  color: green;
+}
+
+option:disabled {
+  background-color: rgba(231, 101, 101, 0.753);
+}
+
+.hashtag {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 4px;
+  font-size: 30px;
+  color: green;
+}
+
+.nosotros-text {
+  font-family: "fuente-p";
+  font-size: 24px;
+  margin: 5px;
+  border: 4px solid yellow;
+  padding: 3px;
+  background-color: beige;
+  color: black;
+}
+
+.galeria ul {
+  width: 100%;
+}
+.galeria ul li {
+  list-style-type: none;
+  margin: 10px;
+}
+.galeria ul img {
+  width: 400px;
+  height: 250px;
+  border: 3px solid green;
+  border-radius: 70px;
+  object-fit: cover;
+}
+
+.gps1 {
+  text-align: center;
+  margin: 5px;
+}
+
+.gps {
+  width: 500px;
+}
+
+.lista-con {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border: 3px solid orange;
+  background-color: beige;
+}
+.lista-con li {
+  list-style-type: none;
+}
+
+h3 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

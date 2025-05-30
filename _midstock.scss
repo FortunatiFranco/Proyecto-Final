@@ -25,3 +25,42 @@
         background-color: violet;
     }
 }
+
+.nike{
+    grid-area: nike;
+}
+
+.nike-1{
+    grid-area: nike-1;
+}
+
+.puma{
+    grid-area: puma;
+}
+
+.adidas{
+    grid-area: adidas;
+}
+
+.nike-2{
+    grid-area: nike-2;
+}
+
+.adidas-1{
+    grid-area: adidas-1;
+}
+
+select:focus{
+    color: green;
+}
+
+option:disabled{
+    background-color: rgba(231, 101, 101, 0.753);
+}
+
+.hashtag{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 4px;
+    font-size: 30px;
+    color: green;
+}
