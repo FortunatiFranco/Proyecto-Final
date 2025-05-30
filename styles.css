@@ -1,20 +1,161 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "fuente-pr";
-    src: url(../fonts/Creepster-Regular.ttf);
+  font-family: "fuente-pr";
+  src: url(../fonts/Creepster-Regular.ttf);
 }
 @font-face {
-    font-family: "fuente-seg";
-    src: url(../fonts/Anton-Regular.ttf);
+  font-family: "fuente-seg";
+  src: url(../fonts/Anton-Regular.ttf);
 }
 @font-face {
-    font-family: "fuente-p";
-    src: url(../fonts/PermanentMarker-Regular.ttf);
+  font-family: "fuente-p";
+  src: url(../fonts/PermanentMarker-Regular.ttf);
+}
+.flex-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid, .stock ul, .medio {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex, .redes-sociales {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: "fuente-pr";
+  font-size: 70px;
+  color: green;
+  margin-top: 0px;
+}
+
+.paginas {
+  display: flex;
+  justify-content: center;
+}
+.paginas li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 6px;
+  border: 1px solid green;
+}
+.paginas a {
+  text-decoration: none;
+  font-size: 20px;
+  color: green;
+}
+.paginas a:hover {
+  color: blue;
+}
+
+h2 {
+  text-align: center;
+  color: green;
+  font-family: "fuente-seg";
+  margin: 10px;
+}
+
+.medio {
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(1, 300px);
+  grid-template-areas: "mujer hombre niño" "mujer hombre niño";
+}
+.medio img {
+  border: 3px solid green;
+  width: 270px;
+  height: 300px;
+  object-fit: cover;
+}
+.medio button {
+  margin-top: 8px;
+  border: solid 2px green;
+  border-radius: 100px;
+}
+.medio button a:hover {
+  color: blue;
+}
+.medio a {
+  text-decoration: none;
+  padding: 2px;
+  color: green;
+}
+
+.mujer {
+  grid-area: mujer;
+}
+
+.hombre {
+  grid-area: hombre;
+}
+
+.niño {
+  grid-area: niño;
+}
+
+.publicidad {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.derechos-res {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.redes-sociales li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 8px;
+}
+.redes-sociales img {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.stock ul {
+  margin: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  grid-template-areas: "nike nike-1 puma" "nike-2 adidas adidas-1";
+}
+.stock ul li {
+  list-style-type: none;
+}
+.stock ul img {
+  border: 2px solid green;
+  width: 200px;
+  height: 200px;
+}
+.stock ul button {
+  margin-top: 4px;
+}
+.stock ul a {
+  text-decoration: none;
+}
+.stock ul a:focus {
+  color: green;
+  background-color: violet;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,18 @@
+.derechos-res{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.redes-sociales{
+    @extend .flex;
+    li{
+        display: inline-block;
+        list-style-type: none;
+        margin: 8px;
+    }
+    img{
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,51 @@
+h2{
+    text-align: center;
+    color: green;
+    font-family: "fuente-seg";
+    margin: 10px;
+}
+
+.medio{
+    @extend .grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas:
+    "mujer hombre niño"
+    "mujer hombre niño";
+    img{
+        border: 3px solid green;
+        width: 270px;
+        height: 300px;
+        object-fit: cover;
+    }
+    button{
+        margin-top: 8px;
+        border: solid 2px green;
+        border-radius: 100px;
+    }
+    button a:hover{
+        color: blue;
+    }
+    a{
+        text-decoration: none;
+        padding: 2px;
+        color: green;
+    }
+}
+
+.mujer{
+    grid-area: mujer;
+}
+
+.hombre{
+    grid-area: hombre;
+}
+
+.niño{
+    grid-area: niño;
+}
+
+.publicidad{
+    text-align: center;
+    margin-top: 50px;
+}

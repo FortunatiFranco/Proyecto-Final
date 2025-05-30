@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 @font-face {
     font-family: "fuente-pr";
     src: url(../fonts/Creepster-Regular.ttf);
@@ -25,7 +26,18 @@
     }
 };
 
-@mixin flex ($display,$justify-content){
-    display: $display;
-    justify-content: $justify-content;
+.flex-mobile{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
 }

@@ -1,0 +1,27 @@
+.stock ul{
+    @extend .grid;
+    margin: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas:
+    "nike nike-1 puma"
+    "nike-2 adidas adidas-1";
+    li{
+        list-style-type: none;
+    }
+    img{
+        border: 2px solid green;
+        width: 200px;
+        height: 200px;
+    }
+    button{
+        margin-top: 4px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:focus{
+        color: green;
+        background-color: violet;
+    }
+}
