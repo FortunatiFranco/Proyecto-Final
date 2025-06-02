@@ -21,20 +21,27 @@ h2{
         width: 270px;
         height: 300px;
         object-fit: cover;
+        margin: 8px;
         @include mobile{
             width: 90%;
             height: auto;
             margin: 4px;
         }
     }
-
+    img:hover{
+        animation: big 2s ease;
+        animation-fill-mode: forwards;
+    }
     button{
-        margin-top: 8px;
+        margin: 5px;
+        padding: 3px;
         border: solid 2px green;
         border-radius: 100px;
+        background-color: white;
+        transition: background-color 2s ease;
     }
-    button a:hover{
-        color: blue;
+    button:hover{
+        background-color: rgb(240, 169, 240);
     }
     a{
         text-decoration: none;
@@ -42,6 +49,16 @@ h2{
         color: green;
     }
 }
+
+@keyframes big{
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.1;
+    }
+}
+
 
 .mujer{
     grid-area: mujer;
@@ -57,7 +74,7 @@ h2{
 
 .publicidad{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 iframe{

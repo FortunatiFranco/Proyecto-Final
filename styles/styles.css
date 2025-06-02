@@ -1,352 +1,357 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "fuente-pr";
-    src: url(../fonts/Creepster-Regular.ttf);
+  font-family: "fuente-pr";
+  src: url(../fonts/Creepster-Regular.ttf);
 }
-
 @font-face {
-    font-family: "fuente-seg";
-    src: url(../fonts/Anton-Regular.ttf);
+  font-family: "fuente-seg";
+  src: url(../fonts/Anton-Regular.ttf);
 }
-
 @font-face {
-    font-family: "fuente-p";
-    src: url(../fonts/PermanentMarker-Regular.ttf);
+  font-family: "fuente-p";
+  src: url(../fonts/PermanentMarker-Regular.ttf);
 }
-
-p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-}
-
-.logo{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-}
-
-h1{
-    text-align: center;
-    text-decoration-line: underline;
-    font-family: "fuente-pr";
-    font-size: 70px;
-    color: green;
-    margin-top: 0px;
-}
-
-.paginas{
-    display: flex;
-    justify-content: center;
-}
-
-.paginas li{
-    display: inline-block;
-    list-style-type: none;
-    margin: 6px;
-    border: 1px solid green;
-}
-
-
-.paginas a{
-    text-decoration: none;
-    font-size: 20px;
-    color: green;
-    
-}
-
-.paginas a:hover{
-color: blue;
-}
-
-
-h2 {
-    text-align: center;
-    color: green;
-    font-family: "fuente-seg";
-    margin: 10px;
-}
-
-.medio {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(1, 300px);
-    grid-template-areas:
-    "mujer hombre niño"
-    "mujer hombre niño";
-}
-
-.mujer{
-    grid-area: mujer;
-}
-
-.hombre{
-    grid-area: hombre;
-}
-
-.niño{
-    grid-area: niño;
-}
-
-.medio img{
-    border: 3px solid green;
-    width: 270px;
-    height: 300px;
-    object-fit: cover;
-}
-
-.medio button{
-    margin-top: 8px;
-    border: solid 2px green;
-    border-radius: 100px;
-}
-
-.medio button a:hover{
-    color:blue;
-}
-
-.medio a{
-    text-decoration: none;
-    padding: 2px;
-    color: green;
-}
-
-.stock ul{
-    display: grid;
-    align-items: center;
-    margin: 10px;
-    text-align: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px;
-    grid-template-areas: 
-    "nike nike-1 puma"
-    "nike-2 adidas adidas-1";
-}
-
-.stock li{
-    list-style-type: none;
-}
-
-.stock img{
-    border: 2px solid green;
-    width: 200px;
-    height: 200px;
-}
-
-.stock button{
-    margin-top: 4px;
-}
-
-.stock a{
-    text-decoration: none;
-}
-
-.stock a:focus{
-    color: green;
-    background-color: violet;
-}
-
-.nike{
-    grid-area: nike;
-}
-
-.nike-1{
-    grid-area: nike-1;
-}
-
-.puma{
-    grid-area: puma;
-}
-
-.adidas{
-    grid-area: adidas;
-}
-
-.nike-2{
-    grid-area: nike-2;
-}
-
-.adidas-1{
-    grid-area: adidas-1;
-}
-
-.publicidad {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.derechos-res{
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-select:focus{
-    color: green;
-}
-
-option:disabled{
-    background-color: rgba(231, 101, 101, 0.753);
-}
-
-.redes-sociales{
-    display: flex;
-    justify-content: center;
-}
-
-.redes-sociales li{
-    list-style-type: none;
-    display: inline-block;
-    margin: 8px;
-}
-
-.redes-sociales img{
-    margin: 5px;
-    width: 30px;
-    height: 30px;
-}
-
-
-.nosotros-text{
-    font-family: "fuente-p";
-    font-size: 24px;
-    margin: 5px;
-    border: 4px solid yellow;
-    padding: 3px;
-    background-color: beige;
-    color: black;
-}
-
-.galeria ul{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.galeria li{
-    list-style-type: none;
-    margin: 10px;
-}
-
-.galeria img{
-    width: 400px;
-    height: 250px;
-    border: 3px solid green;
-    border-radius: 70px;
-    object-fit: cover;
-}
-
-.gps1{
-    text-align: center;
-    margin: 5px;
-}
-.gps{
-    width: 500px;
-}
-
-.lista-con{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border: 3px solid orange;
-    background-color: beige;
-}
-
-.lista-con li{
-    list-style-type: none;
-}
-
-h3{
-    text-align: center;
-}
-
-
-.hashtag{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 4px;
-    font-size: 30px;
-    color: green;
-}
-
-@media (max-width:425px) {
-body{
+@media (max-width: 425px) {
+  body {
     margin: 0;
     padding: 5px;
     font-size: 16px;
     text-align: center;
+  }
 }
 
-.paginas li{
+.grid, .stock ul, .medio {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex, .galeria ul, .redes-sociales {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+}
+@media (max-width: 425px) {
+  .logo {
+    text-align: center;
+    margin: 3px;
+  }
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: "fuente-pr";
+  font-size: 70px;
+  color: green;
+  margin-top: 0px;
+}
+@media (max-width: 425px) {
+  h1 {
+    display: none;
+  }
+}
+
+.paginas {
+  display: flex;
+  justify-content: center;
+}
+.paginas li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 6px;
+  border: 1px solid green;
+}
+@media (max-width: 425px) {
+  .paginas li {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2px;
+  }
+}
+.paginas a {
+  text-decoration: none;
+  font-size: 20px;
+  color: green;
+  background-color: white;
+  transition: background-color 2s ease;
+}
+.paginas a:hover {
+  background-color: rgb(240, 169, 240);
 }
 
-.logo{
-    text-align: center;
-    margin: 3px;
+h2 {
+  text-align: center;
+  color: green;
+  font-family: "fuente-seg";
+  margin: 10px;
 }
 
-h1{
-    display: none;
+.medio {
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(1, 300px);
+  grid-template-areas: "mujer hombre niño" "mujer hombre niño";
 }
-
-.medio{
+@media (max-width: 425px) {
+  .medio {
     display: flex;
     flex-direction: column;
+  }
 }
-
-.medio img{
+.medio img {
+  border: 3px solid green;
+  width: 270px;
+  height: 300px;
+  object-fit: cover;
+  margin: 8px;
+}
+@media (max-width: 425px) {
+  .medio img {
     width: 90%;
     height: auto;
     margin: 4px;
+  }
+}
+.medio img:hover {
+  animation: big 2s ease;
+  animation-fill-mode: forwards;
+}
+.medio button {
+  margin: 5px;
+  padding: 3px;
+  border: solid 2px green;
+  border-radius: 100px;
+  background-color: white;
+  transition: background-color 2s ease;
+}
+.medio button:hover {
+  background-color: rgb(240, 169, 240);
+}
+.medio a {
+  text-decoration: none;
+  padding: 2px;
+  color: green;
 }
 
-iframe{
+@keyframes big {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.1;
+  }
+}
+.mujer {
+  grid-area: mujer;
+}
+
+.hombre {
+  grid-area: hombre;
+}
+
+.niño {
+  grid-area: niño;
+}
+
+.publicidad {
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media (max-width: 425px) {
+  iframe {
     display: none;
+  }
 }
 
-.gps{
-    display: inherit;
-    width: 100%;
-    height: auto;
+.derechos-res {
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
-.stock ul{
+.redes-sociales li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 8px;
+}
+.redes-sociales img {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  transition: width 1s ease, height 1s ease-in;
+}
+.redes-sociales img:hover {
+  width: 45px;
+  height: 45px;
+}
+
+.stock ul {
+  margin-top: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  grid-template-areas: "nike nike-1 puma" "nike-2 adidas adidas-1";
+}
+@media (max-width: 425px) {
+  .stock ul {
     display: flex;
     flex-direction: column;
     padding: 5px;
+  }
 }
-
-.stock li{
+.stock ul li {
+  list-style-type: none;
+}
+@media (max-width: 425px) {
+  .stock ul li {
     margin: 10px;
+  }
+}
+.stock ul img {
+  border: 2px solid green;
+  width: 200px;
+  height: 200px;
+}
+.stock ul button {
+  margin-top: 4px;
+}
+.stock ul a {
+  text-decoration: none;
+}
+.stock ul a:focus {
+  color: green;
+  background-color: violet;
 }
 
-.galeria ul{
+.nike {
+  grid-area: nike;
+}
+
+.nike-1 {
+  grid-area: nike-1;
+}
+
+.puma {
+  grid-area: puma;
+}
+
+.adidas {
+  grid-area: adidas;
+}
+
+.nike-2 {
+  grid-area: nike-2;
+}
+
+.adidas-1 {
+  grid-area: adidas-1;
+}
+
+select:focus {
+  color: green;
+}
+
+option:disabled {
+  background-color: rgba(231, 101, 101, 0.753);
+}
+
+.hashtag {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 4px;
+  font-size: 30px;
+  color: green;
+}
+
+.nosotros-text {
+  font-family: "fuente-p";
+  font-size: 24px;
+  margin: 5px;
+  border: 4px solid yellow;
+  padding: 3px;
+  background-color: beige;
+  color: black;
+}
+
+.galeria ul {
+  width: 100%;
+}
+@media (max-width: 425px) {
+  .galeria ul {
     display: flex;
     flex-direction: column;
+  }
 }
-
-
-.galeria img{
+.galeria ul li {
+  list-style-type: none;
+  margin: 10px;
+}
+.galeria ul img {
+  width: 400px;
+  height: 250px;
+  border: 3px solid green;
+  border-radius: 70px;
+  object-fit: cover;
+}
+@media (max-width: 425px) {
+  .galeria ul img {
     width: 85%;
     height: auto;
     margin: 4px;
+  }
 }
 
-h3{
-    margin-top: 6px;
+.gps1 {
+  text-align: center;
+  margin: 5px;
 }
 
-.lista-con{
+.gps {
+  width: 500px;
+}
+@media (max-width: 425px) {
+  .gps {
+    display: inherit;
     width: 100%;
     height: auto;
+  }
 }
+
+.lista-con {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border: 3px solid orange;
+  background-color: beige;
 }
+@media (max-width: 425px) {
+  .lista-con {
+    width: 100%;
+    height: auto;
+  }
+}
+.lista-con li {
+  list-style-type: none;
+}
+
+h3 {
+  text-align: center;
+}
+@media (max-width: 425px) {
+  h3 {
+    margin-top: 6px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

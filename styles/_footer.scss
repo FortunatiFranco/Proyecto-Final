@@ -14,5 +14,10 @@
         margin: 5px;
         width: 30px;
         height: 30px;
+        transition: width 1s ease, height 1s ease-in;
+    }
+    img:hover{
+        width: 45px;
+        height: 45px;
     }
 }
