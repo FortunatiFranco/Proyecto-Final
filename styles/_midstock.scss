@@ -20,7 +20,7 @@
     }
 
     img{
-        border: 2px solid green;
+        border: 2px solid $primary-color;
         width: 200px;
         height: 200px;
         object-fit: cover;
@@ -32,8 +32,8 @@
         text-decoration: none;
     }
     a:focus{
-        color: green;
-        background-color: violet;
+        color: $primary-color;
+        background-color: $second-color;
     }
 }
 
@@ -62,7 +62,7 @@
 }
 
 select:focus{
-    color: green;
+    color: $primary-color;
 }
 
 option:disabled{
@@ -73,5 +73,5 @@ option:disabled{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 4px;
     font-size: 30px;
-    color: green;
+    color: $primary-color;
 }

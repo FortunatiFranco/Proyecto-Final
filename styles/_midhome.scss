@@ -1,6 +1,6 @@
 h2{
     text-align: center;
-    color: green;
+    color: $primary-color;
     font-family: "fuente-seg";
     margin: 10px;
 }
@@ -17,7 +17,7 @@ h2{
         flex-direction: column;
     }
     img{
-        border: 3px solid green;
+        border: 3px solid $primary-color;
         width: 270px;
         height: 300px;
         object-fit: cover;
@@ -35,18 +35,18 @@ h2{
     button{
         margin: 5px;
         padding: 3px;
-        border: solid 2px green;
+        border: solid 2px $primary-color;
         border-radius: 100px;
         background-color: white;
         transition: background-color 2s ease;
     }
     button:hover{
-        background-color: rgb(240, 169, 240);
+        background-color: $second-color;
     }
     a{
         text-decoration: none;
         padding: 2px;
-        color: green;
+        color: $primary-color;
     }
 }
 
