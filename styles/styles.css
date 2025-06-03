@@ -223,6 +223,7 @@ h2 {
   border: 2px solid green;
   width: 200px;
   height: 200px;
+  object-fit: cover;
 }
 .stock ul button {
   margin-top: 4px;
@@ -232,7 +233,7 @@ h2 {
 }
 .stock ul a:focus {
   color: green;
-  background-color: violet;
+  background-color: rgb(240, 169, 240);
 }
 
 .nike {
@@ -272,6 +273,10 @@ option:disabled {
   margin: 4px;
   font-size: 30px;
   color: green;
+}
+
+.red-descuento {
+  color: red;
 }
 
 .nosotros-text {
