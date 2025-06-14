@@ -27,9 +27,13 @@
     }
     button{
         margin-top: 4px;
+        border: 2px solid $primary-color;
+        padding: 3px;
+        background-color: $primary-color;
     }
     a{
         text-decoration: none;
+        color: white;
     }
     a:focus{
         color: $primary-color;

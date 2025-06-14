@@ -52,7 +52,6 @@
 
 h1 {
   text-align: center;
-  text-decoration: underline;
   font-family: "fuente-pr";
   font-size: 70px;
   color: green;
@@ -95,9 +94,15 @@ h1 {
 
 h2 {
   text-align: center;
+  font-family: "fuente-pr";
+  font-size: 70px;
   color: green;
-  font-family: "fuente-seg";
-  margin: 10px;
+  margin-top: 0px;
+}
+@media (max-width: 425px) {
+  h2 {
+    display: none;
+  }
 }
 
 .medio {
@@ -227,9 +232,13 @@ h2 {
 }
 .stock ul button {
   margin-top: 4px;
+  border: 2px solid green;
+  padding: 3px;
+  background-color: green;
 }
 .stock ul a {
   text-decoration: none;
+  color: white;
 }
 .stock ul a:focus {
   color: green;
@@ -349,14 +358,26 @@ option:disabled {
 .lista-con li {
   list-style-type: none;
 }
+.lista-con a {
+  text-decoration: none;
+}
 
 h3 {
   text-align: center;
+  color: green;
+  font-family: "fuente-seg";
 }
 @media (max-width: 425px) {
   h3 {
     margin-top: 6px;
   }
+}
+
+.registro {
+  background-color: blue;
+  color: white;
+  border: 3px solid blue;
+  padding: 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */

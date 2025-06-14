@@ -25,11 +25,23 @@
     li{
         list-style-type: none;
     }
+    a{
+        text-decoration: none;
+    }
 }
 
 h3{
     text-align: center;
+    color: $primary-color;
+    font-family: "fuente-seg";
     @include mobile{
         margin-top: 6px;
     }
+}
+
+.registro{
+    background-color: blue;
+    color: white;
+    border: 3px solid blue;
+    padding: 8px;
 }
