@@ -4,9 +4,19 @@ h2{
     font-size: 70px;
     color: $primary-color;
     margin-top: 0px;
+    a{
+        color: $primary-color;
+    }
     @include mobile{
         display: none;
     }
+}
+
+.titulo-sec{
+    font-size: 24px;
+    text-align: center;
+    color: $primary-color;
+    font-family: "fuente-seg";
 }
 
 .medio{
